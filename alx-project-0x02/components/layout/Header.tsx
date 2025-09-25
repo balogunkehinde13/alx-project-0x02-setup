@@ -1,4 +1,6 @@
+// components/Header.tsx
 import React from "react";
+import  Link  from "next/link";
 
 const Header: React.FC = () => {
   return (
@@ -6,15 +8,12 @@ const Header: React.FC = () => {
       <div className="max-w-6xl mx-auto flex items-center justify-between">
         <h1 className="text-xl font-bold">My App</h1>
         <nav className="space-x-4">
-          <a href="/" className="hover:underline">
+          <Link href="/home" className="hover:underline">
             Home
-          </a>
-          <a href="/about" className="hover:underline">
+          </Link>
+          <Link href="/about" className="hover:underline">
             About
-          </a>
-          <a href="/contact" className="hover:underline">
-            Contact
-          </a>
+          </Link>
         </nav>
       </div>
     </header>
